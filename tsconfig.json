@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "strict": true,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "outDir": "./dist",
+        "declaration": true,
+        "declarationMap": true,
+        "paths": {
+            "@interpreter": ["./src/interpreter"],
+            "@math": ["./src/math"]
+        }
+    },
+    "include": [
+        "./src"
+    ],
+    "exclude": [
+        "./src/**/test/",
+        "./src/**/*.test.ts",
+        "./src/**/*.mock.ts"
+    ]
+}
