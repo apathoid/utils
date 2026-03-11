@@ -9,7 +9,7 @@
     "scripts": {
         "build": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
         "test:unit": "jest --all",
-        "release": "npm run build && npm run prepare:all && npm publish dist",
+        "release": "npm run build && npm run prepare:all && npm publish --access=public ./dist",
         "prepare:all": "npm run prepare:json && npm run prepare:pack",
         "prepare:json": "node ./scripts/prepublishPrepare.js",
         "prepare:pack": "npm pack ./dist",
