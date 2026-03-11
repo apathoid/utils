@@ -1,7 +1,7 @@
 {
     "name": "@apathoid/utils",
     "description": "Some useful utilities.",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "homepage": "https://github.com/apathoid/utils#readme",
     "module": "./dist/index.js",
     "main": "./dist/cjs/index.js",
