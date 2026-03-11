@@ -1,4 +1,4 @@
-export default function asyncDebounce<T extends unknown[], R>(fn: (...args: T) => Promise<R>, wait: number) {
+export const asyncDebounce = <T extends unknown[], R>(fn: (...args: T) => Promise<R>, wait: number) => {
     let timeoutId: NodeJS.Timeout | undefined;
 
     return function (...args: T) {
@@ -12,5 +12,5 @@ export default function asyncDebounce<T extends unknown[], R>(fn: (...args: T) =
             }, wait);
         });
     };
-}
+};
 
