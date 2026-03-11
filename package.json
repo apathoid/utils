@@ -6,15 +6,10 @@
     "type": "module",
     "main": "./index.cjs",
     "exports": {
-        "import": "./dist/index.js",
-        "require": "./dist/index.cjs",
-        "default": "./dist/index.cjs"
+        "import": "./index.js",
+        "require": "./cjs/index.js",
+        "default": "./cjs/index.cjs"
     },
-    "files": [
-        "dist/index.js",
-        "dist/index.cjs",
-        "dist/index.d.ts"
-    ],
     "scripts": {
         "build": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
         "test:unit": "jest --all",

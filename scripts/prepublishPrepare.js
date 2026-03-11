@@ -1,9 +1,9 @@
-const fs = require('fs');
-const path = require('path');
-const replace = require('replace');
+import fs from 'fs';
+import path from 'path';
+import replace from 'replace';
 
 
-const ROOT_PATH = path.resolve(path.join(__dirname, '..'));
+const ROOT_PATH = path.resolve(path.join(import.meta.dirname, '..'));
 
 
 fs.cp(`${ROOT_PATH}/package.json`, `${ROOT_PATH}/dist/package.json`, () => {
